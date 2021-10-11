@@ -31,10 +31,10 @@ public class SortService {
         Random random = new Random();
         BigDecimal price = BigDecimal.valueOf((random.nextInt(26) * 100 + 500));
         int memory = (random.nextInt(4) + 1) * 6;
-        int producersCount = Notebook.BrandName.values().length;
-        Notebook.BrandName producer = Notebook.BrandName.values()[random.nextInt(producersCount)];
+        int brandNameCount = Notebook.BrandName.values().length;
+        Notebook.BrandName brandName = Notebook.BrandName.values()[random.nextInt(brandNameCount)];
 
-        return new Notebook(price, memory, producer);
+        return new Notebook(price, memory, brandName);
     }
 
     private static void displayNotebooks(List<Notebook> list){
