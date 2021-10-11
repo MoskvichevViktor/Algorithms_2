@@ -10,7 +10,7 @@ public class Notebook implements Comparable<Notebook> {
     BrandName brandName;
 
     public  enum BrandName {
-        LENUVO, ASOS, MACNOTE, ESER, XAMIOU
+        Lenuvo, Asos, MacNote, Eser, Xamiou
     }
 
     @Override

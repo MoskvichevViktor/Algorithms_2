@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class SortService {
-    private static final int NOTEBOOKS_COUNT = 5000;
+    private static final int NOTEBOOKS_COUNT = 10000;
 
     public static void main(String[] args) {
 
@@ -29,8 +29,8 @@ public class SortService {
 
     private static Notebook createNotebook(){
         Random random = new Random();
-        BigDecimal price = BigDecimal.valueOf((random.nextInt(26) * 100 + 500));
-        int memory = (random.nextInt(4) + 1) * 6;
+        BigDecimal price = BigDecimal.valueOf((random.nextInt(31) * 50 + 500));
+        int memory = (random.nextInt(6) + 1) * 4;
         int brandNameCount = Notebook.BrandName.values().length;
         Notebook.BrandName brandName = Notebook.BrandName.values()[random.nextInt(brandNameCount)];
 
